@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import ProptimusOmega from './proptimusOmega'
+
 
 export default class App extends React.Component {
   constructor(props) {
@@ -36,7 +38,7 @@ export default class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <img
-            src={}
+            src = "http://pngimg.com/uploads/transformers/transformers_PNG3.png"
             className="App-logo"
             alt="logo"
           />
@@ -44,7 +46,7 @@ export default class App extends React.Component {
           {this.state && this.state.activeProp === "" /*Which Proptobot should be checked for?*/ &&
           <>
             <p className="">Will this do, human?</p>
-            <Proptimus /*Specify your Proptobot here.*/
+            <ProptimusOmega /*Specify your Proptobot here.*/
               /*You need to pass all of your props to this component here.*/
             />
           </>
